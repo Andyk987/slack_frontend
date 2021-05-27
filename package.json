@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.3.16",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -10,14 +14,24 @@
     "@types/node": "^12.20.10",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/socket.io-client": "^1.4.36",
+    "autoprefixer": "^10.2.5",
+    "graphql": "^15.5.0",
+    "postcss": "^8.2.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.6.6",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "socket.io-client": "^4.0.1",
+    "tailwindcss": "^2.1.2",
     "typescript": "^4.2.4",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "tailwind:build": "tailwind build ./src/styles/tailwind.css -o ./src/styles/styles.css",
+    "start": "npm run tailwind:build & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +53,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "tailwindcss-pseudo-elements": "^2.0.0"
   }
 }

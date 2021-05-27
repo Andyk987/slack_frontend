@@ -1,0 +1,15 @@
+
+body { user-select: none; }
+
+.dark {
+  --color-bg-primary: #1a202c;
+}
+
+@tailwind base;
+@tailwind components;
+
+.arrow {
+  @apply w-2.5 ml-2 !important;
+}
+
+@tailwind utilities;
